@@ -17,6 +17,40 @@ public class Main {
         // Тернарный оператор
         String res = (x==10) ? "123" : "456";
         System.out.println(calc());
+        /*while(true) {
+
+        }
+        do {
+
+        } while (asdgadfg)
+         */
+
+        Car bmw = new Car("BMW",100,"White");
+        Car opel = new Car();
+
+        Car tesla = new ECar();
+
+        Switchable sw = new Switchable() {
+            @Override
+            public void turnOn() {
+
+            }
+
+            @Override
+            public void turnOff() {
+
+            }
+        };
+        sw.turnOff();
+        sw.turnOn();
+
+        Calculable clc = (x1, y1) -> {
+            int res1 = x1 + y1;
+            System.out.println(res1);
+        };
+
+        clc.calc(5,6);
+
 
     }
     public static int calc() {
